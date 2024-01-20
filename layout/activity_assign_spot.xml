@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/selectStartTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select the Start Time"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp" />
+
+    <Spinner
+        android:id="@+id/startTimeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectStartTimeTextView"
+        android:layout_marginTop="20dp"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:id="@+id/selectEndTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select the End Time"
+        android:textSize="18sp"
+        android:layout_below="@id/startTimeSpinner"
+        android:layout_marginTop="20dp" />
+
+    <Spinner
+        android:id="@+id/endTimeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectEndTimeTextView"
+        android:layout_marginTop="20dp"
+        android:spinnerMode="dropdown" />
+
+    <Button
+        android:id="@+id/checkAvailabilityButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/endTimeSpinner"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#D32F2F"
+        android:text="Check Availability" />
+
+    <TextView
+        android:id="@+id/assignedSpotTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkAvailabilityButton"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="Assigned Spot Will Appear Here"
+        android:textSize="18sp" />
+
+</RelativeLayout>
